@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+@import url("font-awesome.min.css");
+@import url("framework.css");
+
+
+
+/* Page Intro
+--------------------------------------------------------------------------------------------------------------- */
+#pageintro{padding:250px 0 130px;}
+
+#pageintro article{display:block; max-width:50%;}
+#pageintro article *{word-wrap:break-word;}
+#pageintro .heading{margin-bottom:20px; font-size:4rem;}
+#pageintro p:first-of-type{margin-bottom:30px;}
+#pageintro footer{margin-top:80px;}
+
+
+/* Copyright
+--------------------------------------------------------------------------------------------------------------- */
+#copyright{padding:20px 0;}
+#copyright *{margin:0; padding:0;}
+
+
+/* Transition Fade
+--------------------------------------------------------------------------------------------------------------- */
+*, *::before, *::after{transition:all .28s ease-in-out;}
+#mainav form *{transition:none !important;}
+
+
+/* Colours
+--------------------------------------------------------------------------------------------------------------- */
+body{color:#FFFFFF; background-color:#252525;}
+a{color:#D20000;}
+a:active, a:focus{background:transparent;}/* IE10 + 11 Bugfix - prevents grey background */
+hr, .borderedbox{border-color:#D7D7D7;}
+label span{color:#FF0000; background-color:inherit;}
+input:focus, textarea:focus, *:required:focus{border-color:#36D68C;}
+.overlay{color:#FFFFFF; background-color:inherit;}
+.overlay::after{color:inherit; background-color:rgba(0,0,0,.55);}
+
+.btn, .btn.inverse:hover, a .icon.fa, a.inverse:hover .icon.fa{color:#FFFFFF; background-color:#D20000; border-color:#E01717;}
+.btn:hover, .btn.inverse, a:hover .icon.fa, a.inverse .icon.fa{color:inherit; background-color:transparent; border-color:#E01717;}
+
+
+/* Rows */
+.row5{color:#CBCBCB; background-color:#252525;}
+
+
+
+/* Media Queries
+--------------------------------------------------------------------------------------------------------------- */
+@-ms-viewport{width:device-width;}
+
+
+/* Max Wrapper Width - Laptop, Desktop etc.
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (min-width:978px){
+	.hoc{max-width:978px;}
+}
+
+
+/* Other
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width:650px){
+	.scrollable{display:block; width:100%; margin:0 0 30px 0; padding:0 0 15px 0; overflow:auto; overflow-x:scroll;}
+	.scrollable table{margin:0; padding:0; white-space:nowrap;}
+
+	.inline li{display:block; margin-bottom:10px;}
+	.pushright li{margin-right:0;}
+
+	.font-x2{font-size:1.4rem;}
+	.font-x3{font-size:1.6rem;}
+
+	#pageintro article{max-width:none; width:100%;}
+	#pageintro .heading{font-size:2rem;}
+}
